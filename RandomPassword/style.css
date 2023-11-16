@@ -1,0 +1,118 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,*:after,*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-window{
+    background-color: #a1a168bb;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 550px;
+    color: #fff;
+    margin: 0 10px;
+    padding: 2rem 16px;
+    border-radius: 4px;
+    box-shadow: 0 6px 10px #22222290;
+    background: url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
+}
+.copied{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    background-color: #a1a168;
+    border-radius: 0 0 4px 4px;
+    padding: 5px 10px;
+    animation: down .3s ;
+    display: none;
+    
+}
+@keyframes down {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.visible{
+    display: block;
+}
+
+h1{
+    font-size: 28px;
+}
+h1 .strong{
+    color: #a1a168;
+}
+hr{
+    margin-top: 1rem;
+    border: none;
+    width: 100%;
+    border-top: 2px solid #a1a16821;
+}
+.passw-box{
+    margin-top: 1rem;
+    background-color: #fff;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+.passw-box > p{
+    margin-left: 8px;
+    font-size: 18px;
+    color: #4b4b2d;
+    user-select: none;
+}
+.passw-box > i{
+    cursor: pointer;
+    background-color: #a1a168;
+    color: #fff;
+    padding: .5rem;
+    font-size: 20px;
+    border-radius: 0 4px 4px 0;
+    position: relative;
+    left: 1px;
+    transition: all .25s ease;
+}
+.passw-box > i:hover{
+    background-color: #fff;
+    color: #a1a168;
+    box-shadow: inset 0 0 0 2px #a1a168;
+}
+.button-box{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: #a1a168;
+    color: #f2f2f2;
+    padding: 10px 25px;
+    width: 250px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    user-select: none;
+}
+.button-box:hover{
+    color: #a1a168;
+    background-color: #fff;
+}
+.button-box >i{
+    font-size: 20px;
+}

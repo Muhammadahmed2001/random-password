@@ -27,17 +27,22 @@ function generatePassword() {
   
   passwordInput.innerText = password
 }
-
-
-
 var passwordStrength = document.getElementById("password-strength")
+
+
+
 function copyText(){
   if(password !== ""){
+    copied.innerHTML = "Copied!"
+    copied.style.backgroundColor = "#a1a168"
     copied.style.display = "block"
     navigator.clipboard.writeText(passwordInput.innerText)
-    passwordStrength.innerHTML = password
+    passwordStrength.value = password
   }else{
-    alert("enter value")
+    copied.style.display = "block"
+    copied.innerHTML = "Password Not Generated"
+    copied.style.backgroundColor = "#ff3939"
+
   }
 
 }
@@ -83,6 +88,8 @@ function copyText(){
 //   strong = true
 // }
 // console.log("strong==> " + strong, password)
+
+
 
 
 

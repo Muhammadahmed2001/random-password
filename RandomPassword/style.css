@@ -28,6 +28,13 @@
     box-shadow: 0 6px 10px #22222290;
     background: url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
 }
+.input{
+    font-size: 18px;
+    color: #4b4b2d;
+    user-select: none;
+    width: 100%;
+    padding: 8px;
+}
 .copied{
     position: absolute;
     top: 0;
